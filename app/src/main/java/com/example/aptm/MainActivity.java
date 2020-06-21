@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Mapbox.getInstance(getApplicationContext(), getString(R.string.mapbox_access_token));
+        Mapbox.getInstance(getApplicationContext(), getString(R.string.mapbox_access_token)); //mapbox access token
         setContentView(R.layout.activity_main);
         Mapbox.getInstance(this, "pk.eyJ1IjoiZ2J0d2xkIiwiYSI6ImNrYm9xaWN3bjBzMjcyeXB0dzZtanRnankifQ.Lj4Cm_P80zYLhGJojR1Bbg");
         setContentView(R.layout.activity_main);
