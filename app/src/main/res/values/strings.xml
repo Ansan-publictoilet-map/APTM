@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">APTM</string>
+    <string name="mapbox_access_token">pk.eyJ1IjoiZ2J0d2xkIiwiYSI6ImNrYm9xaWN3bjBzMjcyeXB0dzZtanRnankifQ.Lj4Cm_P80zYLhGJojR1Bbg</string>
 </resources>
