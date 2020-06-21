@@ -1,49 +1,37 @@
 package com.example.aptm;
 
+import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
-
-import android.os.Bundle;
 import com.mapbox.mapboxsdk.Mapbox;
 import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 import com.mapbox.mapboxsdk.maps.Style;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
+public class MainActivity extends AppCompatActivity implements
+        OnMapReadyCallback {
+        private MapView mapView;
 
-public class MainActivity extends AppCompatActivity {
-    private MapView mapView;
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            Mapbox.getInstance(getApplicationContext(), getString(R.string.mapbox_access_token)); //mapbox access token
+            setContentView(R.layout.activity_main);
+            Mapbox.getInstance(this, "pk.eyJ1IjoiZ2J0d2xkIiwiYSI6ImNrYm9xaWN3bjBzMjcyeXB0dzZtanRnankifQ.Lj4Cm_P80zYLhGJojR1Bbg");
+            setContentView(R.layout.activity_main);
+            mapView = findViewById(R.id.mapView);
+            mapView.onCreate(savedInstanceState);
+            mapView.getMapAsync(this);
+        }
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Mapbox.getInstance(getApplicationContext(), getString(R.string.mapbox_access_token)); //mapbox access token
-        setContentView(R.layout.activity_main);
-        Mapbox.getInstance(this, "pk.eyJ1IjoiZ2J0d2xkIiwiYSI6ImNrYm9xaWN3bjBzMjcyeXB0dzZtanRnankifQ.Lj4Cm_P80zYLhGJojR1Bbg");
-        setContentView(R.layout.activity_main);
-        mapView = findViewById(R.id.mapView);
-        mapView.onCreate(savedInstanceState);
-        mapView.getMapAsync(new OnMapReadyCallback() {
-            @Override
-            public void onMapReady(@NonNull MapboxMap mapboxMap) {
-                mapboxMap.setStyle(Style.MAPBOX_STREETS, new Style.OnStyleLoaded() {
-                    @Override
-                    public void onStyleLoaded(@NonNull Style style) {
-
-                        // Map is set up and the style has loaded. Now you can add data or make other map adjustments.
-
-
-                    }
-                });
-            }
-        });
-
-    }
+        @Override
+        public void onMapReady(@NonNull final MapboxMap mapboxMap) {
+            mapboxMap.setStyle(new Style.Builder().fromUri("mapbox://styles/gbtwld/ckboqvris3m7n1inw41wcglti"));
+        }
     @Override
     public void onStart() {
         super.onStart();
@@ -85,5 +73,4 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         mapView.onSaveInstanceState(outState);
     }
-
 }
