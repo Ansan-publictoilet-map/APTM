@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/APTM.iml" filepath="$PROJECT_DIR$/.idea/modules/APTM.iml" group="APTM" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/APTM Project-APTM.iml" filepath="$PROJECT_DIR$/.idea/modules/APTM Project-APTM.iml" group="APTM" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="APTM/app" />
     </modules>
   </component>

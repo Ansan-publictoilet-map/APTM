@@ -4,4 +4,6 @@
     <string name="access_token">pk.eyJ1IjoiZ2J0d2xkIiwiYSI6ImNrYm9xaWN3bjBzMjcyeXB0dzZtanRnankifQ.Lj4Cm_P80zYLhGJojR1Bbg</string>
     <string name="user_location_permission_explanation">위치 허용해야하는 이유</string>
     <string name="user_location_permission_not_granted">위치 허용 거부</string>
+    <string name="capital">Capital: %1$s</string>
+    <string name="tap_on_marker_instruction">Tap on a marker</string>
 </resources>
