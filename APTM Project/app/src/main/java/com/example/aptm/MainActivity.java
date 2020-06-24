@@ -283,7 +283,7 @@ public class MainActivity extends AppCompatActivity implements
                 return null;
             }
 
-            String geoJson = loadGeoJsonFromAsset(activity, "us_west_coast.geojson");
+            String geoJson = loadGeoJsonFromAsset(activity, "APT_Location.geojson");
             return FeatureCollection.fromJson(geoJson);
         }
 
@@ -314,7 +314,7 @@ public class MainActivity extends AppCompatActivity implements
                 byte[] buffer = new byte[size];
                 is.read(buffer);
                 is.close();
-                return new String(buffer, Charset.forName("UTF-8"));
+                return new String(buffer, Charset.forName("windows-949"));
             } catch (Exception exception) {
                 throw new RuntimeException(exception);
             }
