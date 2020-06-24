@@ -66,7 +66,11 @@ public class MainActivity extends AppCompatActivity implements
     private static final String CALLOUT_LAYER_ID = "CALLOUT_LAYER_ID";
     private static final String PROPERTY_SELECTED = "selected";
     private static final String PROPERTY_NAME = "name";
-    private static final String PROPERTY_CAPITAL = "capital";
+    private static final String PROPERTY_ADRESS = "adress";
+    private static final int PROPERTY_MAN = 0;
+    private static final int PROPERTY_DISABLEDMAN = 0;
+    private static final int PROPERTY_WOMAN = 0;
+    private static final int PROPERTY_DISABLEDWOMAN = 0;
     private GeoJsonSource source;
     private FeatureCollection featureCollection;
 
@@ -364,10 +368,10 @@ public class MainActivity extends AppCompatActivity implements
                     TextView titleTextView = bubbleLayout.findViewById(R.id.info_window_title);
                     titleTextView.setText(name);
 
-                    String style = feature.getStringProperty(PROPERTY_CAPITAL);
+                    String style = feature.getStringProperty(PROPERTY_ADRESS);
                     TextView descriptionTextView = bubbleLayout.findViewById(R.id.info_window_description);
                     descriptionTextView.setText(
-                            String.format(activity.getString(R.string.capital), style));
+                            String.format(activity.getString(R.string.adress), style));
 
                     int measureSpec = View.MeasureSpec.makeMeasureSpec(0, View.MeasureSpec.UNSPECIFIED);
                     bubbleLayout.measure(measureSpec, measureSpec);
