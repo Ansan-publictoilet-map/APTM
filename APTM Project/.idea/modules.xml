@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/APTM.iml" filepath="$PROJECT_DIR$/.idea/modules/APTM.iml" group="APTM" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/APTM Project-APTM.iml" filepath="$PROJECT_DIR$/.idea/modules/APTM Project-APTM.iml" group="APTM" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/APTM Project-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/APTM Project-app.iml" group="APTM/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/APTM-APTM Project-APTM.iml" filepath="$PROJECT_DIR$/.idea/modules/APTM-APTM Project-APTM.iml" group="APTM" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/APTM-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/APTM-app.iml" group="APTM/app" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="APTM/app" />
     </modules>
