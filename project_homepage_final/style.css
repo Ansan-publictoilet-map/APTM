@@ -146,6 +146,30 @@ legend {
   color:#9E9E9E;
 }
 
+.price-item2{
+  text-align: center;
+  width:700px;
+  height: 300px;
+  border: solid #9E9E9E 1px;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 40px;
+  border-radius: 4px;
+  color:#9E9E9E;
+}
+
+.price-item3{
+  text-align: center;
+  width:300px;
+  height: 300px;
+  border: solid #9E9E9E 1px;
+  margin-top: 40px;
+  margin-left: 100px;
+  margin-right: 40px;
+  border-radius: 4px;
+  color:#9E9E9E;
+}
+
 .price-item-title{
   font-size: 40px;;
   background: #151515;
@@ -189,19 +213,16 @@ legend {
   font-size: 20px;
 }
 
+.price-item-content4{
+  margin: auto;
+  font-size: 20px;
+}
+
 .explain{
   font-size: 15px;
 }
 
 .hyperlink{
-  font-size : 25px;
-  margin-left: 200px;
-  margin-top: 70px;
-}
-
-.hyperlink2{
-  position: absolute;
-  font-size : 25px;
-  left: 800px;
-  top: 245px;
+  font-size : 20px;
+  float: left;
 }
